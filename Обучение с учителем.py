@@ -480,8 +480,8 @@ print('Лучший результат downsampled - ',
 # In[32]:
 
 
-model = RandomForestClassifier(bootstrap=True, class_weight='balanced', max_depth=8,
-                               n_estimators=40, random_state=12345)
+model = RandomForestClassifier(bootstrap=True, class_weight='balanced', max_depth=20,
+                               n_estimators=80, random_state=12345)
 
 model.fit(features_upsampled, target_upsampled)
 predicted_test = model.predict(features_test)
